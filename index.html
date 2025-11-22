@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DJ Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+    }
+    header {
+      padding: 80px 20px;
+      text-align: center;
+      background: url('hero-image.jpg') center/cover no-repeat;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.85;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      background: #111;
+      position: sticky;
+      top: 0;
+      flex-wrap: wrap; 
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .music-embed iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      padding: 20px;
+      text-align: center;
+      background: #111;
+      opacity: 0.8;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DJ Name</h1>
+    <p>Electronic • House • Techno</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#music">Music</a>
+    <a href="#shows">Shows</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      Write a short bio here. Describe your sound, influences, and what makes you 
+      unique as a DJ.
+    </p>
+  </section>
+
+  <section id="music">
+    <h2>Music</h2>
+    <div class="music-embed">
+      <!-- Example SoundCloud embed -->
+      <iframe scrolling="no" frameborder="no" allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/123456789">
+      </iframe>
+    </div>
+  </section>
+
+  <section id="shows">
+    <h2>Upcoming Shows</h2>
+    <ul>
+      <li>Jan 12 — Club XYZ, San Francisco</li>
+      <li>Feb 03 — The Warehouse, Los Angeles</li>
+      <li>Mar 21 — Neon Nights Festival</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="photo1.jpg" alt="DJ performing" />
+      <img src="photo2.jpg" alt="Crowd photo" />
+      <img src="photo3.jpg" alt="Lights and stage" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: booking@example.com</p>
+    <p>Instagram: @yourdjname</p>
+  </section>
+
+  <footer>
+    <p>© 2025 DJ Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
