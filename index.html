@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style></style>
   <title>DJ Portfolio</title>
   <style>
   </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>DJ Name</h1>
-    <p>Electronic • House • Techno</p>
+  <header class="header">
+    <h1 class="title-main">DJ Omar Shishani</h1>
+    <p class="header__subhead">Electronic • House • Techno</p>
   </header>
 
-  <nav>
+  <nav class="nav">
     <a href="#about">About</a>
     <a href="#music">Music</a>
     <a href="#shows">Shows</a>
@@ -24,13 +26,18 @@
   <section id="about">
     <h2>About</h2>
     <p>
-      Write a short bio here. Describe your sound, influences, and what makes you 
-      unique as a DJ.
+      House DJ residing in San Jose. Enjoy indie house, progressive house, techno, deep house.
     </p>
   </section>
 
   <section id="music">
     <h2>Music</h2>
+    <div class="music-embed">
+      <audio controls src="https://dj.omarshishani.com/hot-day.mp3">
+        <source src="https://dj.omarshishani.com/hot-day.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
     <div class="music-embed">
       <!-- Example SoundCloud embed -->
       <iframe scrolling="no" frameborder="no" allow="autoplay"

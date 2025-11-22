@@ -4,20 +4,20 @@ body {
   background: #0d0d0d;
   color: #fff;
 }
-header {
+.header {
   padding: 80px 20px;
   text-align: center;
   background: url('hero-image.jpg') center/cover no-repeat;
 }
-header h1 {
+.title-main {
   font-size: 3rem;
   margin: 0;
 }
-header p {
+.header__subhead{
   font-size: 1.2rem;
   opacity: 0.85;
 }
-nav {
+.nav {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -27,7 +27,7 @@ nav {
   top: 0;
   flex-wrap: wrap; 
 }
-nav a {
+.nav a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
